@@ -1,0 +1,15 @@
+1)boxicon 搵icon
+
+2)fontawesome icon可以選大小 / rotation / 動畫 / 顏色
+https://fontawesome.com/kits
+例子: <i class="fa-duotone fa-award"></i>
+
+3)色盆
+https://htmlcolorcodes.com/
+:root{
+	--dark-color:#171717;
+	--light-dark-color:#292929;
+}
+4)html 輸入空格 
+>>&nbsp;
+https://note.charlestw.com/html-space/

@@ -1,0 +1,64 @@
+1)npx create-react-app my-app / npm install / npm start
+裝es7插件 整functional component框架 _rfc 已自動
+
+2)each child in a list should have a unique "key" prop.  
+-> <div key={list.id}> list個div要加key做記號
+
+3)<img src={process.env.PUBLIC_URL+img} alt="img"/> 
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />  
+(process.env.PUBLIC_URL確保圖片係其他頁面可用 記住file要放public)
+https://cra.nodejs.cn/docs/using-the-public-folder/
+
+4)<img src={require('./img/apple.png')} alt="apple"/>
+https://medium.com/itsoktomakemistakes/react-create-react-app-import-images-with-webpack-372e6ea19e2a
+
+5)import完要再 名.class名
+<div className={styles.productBorder}key={product.id}>
+
+6)console.log行先之後又再係stage更新
+
+7) Props 傳資料落子元素
+
+8) useState同useRef差別: State更新值會re-render而Ref唔會
+>>>點解用useState而唔係count=count+1 , 因為後者唔會令系統re-render而state會.
+const [ count, setCount ] = useState(15);  << count預設值係15
+
+9) useEffect會在component render完先會行,而render係係return個陣先會發生,所以通常第一次都味更新值
+https://www.youtube.com/watch?v=q0C5g4WIrKU
+
+useEffect 
+-> 如果冇第2個參數,component每次render都會觸發 / 如果第2個參數係[]空白array就只會係第一次render觸發
+->>第2種可以處理fetch api無限loop既問題 > 將fetch api放落useeffect
+->>>第3種係[array]有變數時:第一次render時/指定變數改變時會觸發
+
+10)react好處:
+a)組件開發 易整理 b)可以只re-render一part而唔係全頁面 c)單向數據 (props)上而下傳 易整理
+
+<></>簡寫  <react.fragment></react.fragment>全寫
+
+https://www.youtube.com/watch?v=1lhKLzOYNVk&list=PL91gvBcdjUtbeAJEDWP_eEknED4el1afy&index=24
+發佈redirect 
+
+ <Route path="/" exact component={Index} /> route homepage最好加exact如果唔係會有錯 (why)
+
+props.children -> <component> childrenHere </component> 
+
+
+預設props資料
+component名.propTypes ={
+	prop名1:propTypes.bool,
+	prop名2:propTypes.number,
+	}
+component名.defaultProps ={
+	prop名1:false,
+	prop名2:10000,
+	}
+
+
+
+
+npm install
+
+
+11)addEvenListener 用完要remove返 唔係會愈堆愈多愈慢
+

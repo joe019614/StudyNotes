@@ -1,0 +1,51 @@
+1) position (預設:static 唔受top left right bottom影響)
+
+position:fixed 固定係頁面某個位 mouse向上向下拉都唔會移位 自己一層layer係面咁
+> fixed >bottom:5px 出現係離最底5px既位	*如果冇寫就stay係本身原位 
+根據頁面定位
+
+position:relative> bottom:5px 原位向下5px
+
+position:absolute 同fixed相近 根據relative定位
+
+*如果外層div有position:relative而內層有absolute,咁內層既botton:5px係用外層範圍而定
+
+https://www.youtube.com/watch?v=nNoj0aCNxfU
+
+
+
+2) background:linear-gradient( -90deg,#031540 65%,#fff 35%)
+	background-color: transparent;
+	背景2隻色
+3) -webkit-text-stroke: 0.5px #fff;  文字外框第2隻色
+
+4)display: inline-flex / flex 分別
+
+5)box-shadow: 外邊色
+
+6).intro::before{    	https://mocationer.com/before-after-css/
+  content: "";
+
+7)overflow:hidden?????
+
+8) padding: 上 右 下 左 / 上 左右 下 / 上下 左右 /
+	    1   2  3  4   1    2  3      1   2
+
+9)vw vh better> px ??
+
+10)background-size :auto/contain/cover?
+auto:原本大細
+contain: 縮細
+cover: 放大
+
+
+11)margin > box-shadow > outline > border > padding > content
+
+12) inline-block / box-shadow
+
+13)text-shadow: 7px 4px  3px black;/* x y 模範lv */
+
+14) input::placeholder{
+	color:red; } ???  /// input:focus{} ???
+
+15)box-sizing: border-box;

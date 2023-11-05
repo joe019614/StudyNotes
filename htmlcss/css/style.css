@@ -1,0 +1,11 @@
+        img{border: solid thin red;opacity: 1;border-radius:10%;}
+        img:hover{border: solid thick cornflowerblue;opacity: 0.5}
+        a:hover{font-size: 30px;}
+        a:visited{color:goldenrod}
+        a{color:aliceblue;}
+        #jdub{padding:5px;margin-top:25px;}
+        #heats{padding: 11px;margin: 5px;}
+        body{background-image:url(/img/walltest.jpg); background-repeat:no-repeat;background-attachment:fixed; background-size:cover;} 
+        .line-height{line-height:2}
+        .letter-spacing{letter-spacing: 5px}
+        a{text-decoration:none}

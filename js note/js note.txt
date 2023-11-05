@@ -1,0 +1,65 @@
+放file </html> </body>前面
+連file <script src="file名.js">
+
+js每行完結要分號 ;  
+
+alert("test")  彈訊息
+
+註解 //test :
+多行註解 /* 123123 */
+快捷鍵 alt+shift+a
+
+變數(variable):
+let a=10;
+let b='jstest';
+console.log(a,b); > 10 'jstest'
+a=20;
+console.log(a); 
+>20   #更新變數數值唔使Let
+
+null/undefined:
+let d = null (味有數值)
+let e; > console.log(e) > 出undefined(味定義)
+
+常數(constant不能更改):
+const c = 'home';
+console.log(c); > 'home'
+
+改名:
+a $ _ 開頭
+a 123 _ $ 其他
+
+array:
+let f = ['a1','a2','a3',3,4,5];
+
+object:
+let g = {
+    A1 : 'joe',
+    A2 : '24',
+    A3 : true,
+    A4 : ['a1','a2','a3',3,4,5]
+};
+
+let h ='youtube';
+let i ='javescript';
+console.log(h+ ' a_b_c '+i ) >  
+console.log(h[2]) > u
+console.log(h.length) > 搵長度
+
+100) 
+Destructuring
+https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
+let a, b, rest;
+[a, b] = [10, 20];
+console.log(a);
+// Expected output: 10
+console.log(b);
+// Expected output: 20
+[a, b, ...rest] = [10, 20, 30, 40, 50];
+console.log(rest);
+// Expected output: Array [30, 40, 50]
+
+
+
+
+

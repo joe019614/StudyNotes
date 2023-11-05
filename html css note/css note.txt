@@ -1,0 +1,54 @@
+head位
+<style> </style>>css位
+
+#csstest1{}   單體標記
+<h1 id="單體css1">
+
+.csstest2{} 群體標記
+<a class="csstest2"  >群體css設計 class=""
+<a class="csstest1 test2 test3"> 可以連放 #####
+
+h1{color: #335EF ; font-size: 50px ; } 色/ 字大細
+
+a{text-decoration:none}  裝飾低線
+
+{text-align: center} left right center justify inherit??  (https://www.w3school.com.cn/cssref/pr_text_text-align.asp)
+
+{line-height:1} 行高
+{letter-spacing: 3px} 字距
+
+
+img{ } 所有圖片
+img{border: solid thick cornflowerblue;}   solid邊框 框寬thick medium thin 框色   (https://www.runoob.com/css/css-border.html)
+{opacity:0.5}  透明度 0~1 0全透
+
+
+
+body{background-color: red} 背景色
+body{background-image: url("/image.jpg");} 背景圖片
+{background-repeat: no-repeat;} 背景重複
+{background-attachment:fixed} 背景固定 
+{background-size:cover}  放大填滿背景
+{background-position:left right} 背景圖位置 xy軸
+
+
+
+現成css library
+bootstrap
+foundation
+pure
+bulma
+semantic ui
+
+
+font-weight:noraml / bold / lighter /100 /900
+
+boxicons 拎icon圖 >usage > Usage as a Font copy 
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+https://boxicons.com/usage
+
+
+
+
+
+

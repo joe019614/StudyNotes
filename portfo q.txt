@@ -1,0 +1,187 @@
+1)overflow-x:hidden;
+
+2)em rem https://www.hexschool.com/2016/01/02/2016-08-08-em-vs-rem/
+
+3):nth-child(2) ??
+
+4)::before 
+https://mocationer.com/before-after-css/
+
+5)flex-basis and width diff
+
+6) flex同inlineflex幾時用
+
+JS Part
+
+7) element.classList.toggle("mystyle");  toggle加classs / remove delete
+
+8)offsetHeight // offsetTop // scrollY ???
+https://www.youtube.com/watch?v=kAQ0Fo8ARTw
+
+
+9)/* scroll sections */
+let sections=document.querySelectorAll("section");
+let navLinks=document.querySelectorAll("header nav a");
+
+window.onscroll=()=>{
+    sections.forEach(sec=>{
+        let top=window.scrollY; /* 而家落左幾多 */  
+        let offset=sec.offsetTop-20; /* 子元素離父元素(bodytop)幾高 */  /* 0 971 1942 3364 4335 */
+        let height=sec.offsetHeight; /* 目前既section高度幾高 */ /* 971 971 1422 971 971 */
+        let id=sec.getAttribute("id"); /* section名 */
+
+        /* console.log(id); */
+        if(top >= offset/*  && top < offset + height */){
+            /* active navbar links */
+            navLinks.forEach(links => {
+                links.classList.remove("active");
+                document.querySelector( `header nav a[href="#${id}"]`).classList.add("active");
+                /* *= 拎哂  一係href*=${id} or href="#${id}"*/
+            })
+            /* console.log(id); */
+        }
+    })};
+    /* https://www.youtube.com/watch?v=sQoiM7i5Nqc&t=2642s
+    1:11:18 */
+
+10) display block 同flex分別
+
+11)home page fewd點整
+
+.home-content .text-animate h3{
+    font-size: 3rem;
+    font-weight: 700;
+    color:transparent;
+    -webkit-text-stroke: 1px var(--main-color); /* ori 0.7px  test 0.5px */
+    background: linear-gradient(var(--main-color),var(--main-color));
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    /* background 要用linear先可以正係show部份  */
+}
+
+12) animation:aboutSpinner 5s linear infinite;  
+linear 係運作速度
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1200px){
+    html{
+        font-size:50%;
+    }
+}
+@media (max-width : 1025px) {
+    .header{
+        padding:2rem 5%;
+    }
+    section{
+        padding:10rem 15% 2rem;
+        /* ori 
+        padding:10rem 10% 2rem; */
+    }
+    .home{
+        padding:0 5%;
+    }
+}
+@media (max-width:768px){
+    .header{
+        background: var(--bg-color);
+    }
+    #menu-icon{    /* 手機版meunu */
+        display: block;
+        position: absolute;
+        top:2.5rem;
+        left:5rem;
+        
+    }
+    .navbar{
+        position: absolute;
+        top:100%;
+        left:-100%; /* 0> -100% for rwd */
+        width:100%;
+        padding:1rem 5%;
+        background: var(--second-bg-color);
+        box-shadow: 0 0.5rem 2rem rgba(0,0,0, 1); /* 左右 上下 多少 */
+        /* border:2px solid red; */
+        transition: .5s;
+       /*  transition-delay: .25s; */
+       z-index: 1;
+    }
+    .navbar.active{  /* for responsive menu button */
+        left:0; /* 拉返menu出尼 */
+        /* transition-delay: 0s; */
+    }
+  
+    .navbar a{
+        display: block;
+        font-size: 2.5rem;
+        margin: 1rem 0rem;
+    }
+    .home-imgHover{
+        pointer-events: none;
+        background: var(--bg-color);
+        opacity: 0.6;
+    }
+}
+@media (max-width:480px) {
+    html{
+        font-size:40%;
+    }
+    .home-content h1{
+        display: flex;   /* 名個span可以拉落尼 */
+        flex-direction: column;
+    }
+    .home{
+        background-size: 95%;
+       
+    }
+/*     .home-sci{
+        width:160px;
+        border:2px solid red;
+    }
+    .home-sci a{
+        width:3rem;
+        height: 3rem;
+    } */
+}
+
+
+/* Home fewd animation */
+@keyframes homeBgText{
+    0%,100%{
+        background-position: -35rem 0;
+    }
+    40%{
+        background-position: 0 0;
+    }
+}
+/* @keyframes homeCursorText{
+    0%{
+        width:0%;
+    }
+    35%{
+        width:67%;
+        }
+        
+} */
+@keyframes aboutSpinner{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+!!!!!!) MovieP.innerHTML= resultA[i].Title.replace(
+            new RegExp(searchbox.value, "gi"),  /* match既字轉粗體 */
+            '<strong>$&</strong>'
+          ); 
+what is dis
+

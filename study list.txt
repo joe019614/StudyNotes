@@ -1,0 +1,103 @@
+2)bootstrap tildwind?
+
+3)height:100% / 100vh 差別
+父元素100% // 個mon既100%
+https://stackoverflow.com/questions/27612931/styling-html-and-body-selector-to-height-100-vs-using-100vh
+
+4)inline, block, inline-block 差別
+2個inline元素前後排例  類似<span>tag咁 // 無法設定高度寬度/上下padding及margin(左右可以)(1行順住落) 
+2個block元素上下堆疊  類似<div>tag咁//可以設定高度(250px)
+inline-block 有得set高度既line 
+https://www.youtube.com/watch?v=XilulyLKeEA
+https://www.youtube.com/watch?v=CGIhz9f18xo
+https://www.youtube.com/watch?v=Ch72moCeKps
+https://www.youtube.com/watch?v=_t9ywk1Didw
+
+5)box-shadow: 0 0 10px rgba(0,0,0,.1); 左右 上下 模糊程度 色 inset(外側變內側)
+https://www.youtube.com/watch?v=jEuvbVVkcT0
+
+6)transform: rotate(45deg);	transform太多種
+https://developer.mozilla.org/en-US/docs/Web/CSS/transform
+
+7)@keyframes functionName {
+    0%{
+        transform: translateY(100px); 由下100px向上
+        opacity:0 ;
+    }
+    100%{
+        transform: translateY(0);
+        opacity:1;
+    }
+}
+
+8)overflow: hidden/scroll/auto;  超出範圍直接cut / scroll / both
+
+9)(backwards去返原位) (for係停個個位) (ease係dafault速度)
+	div {
+  		animation-name: animation;
+	   }
+	@keyframes animation{
+  		animation: slideRight 1.5s ease forwards;
+	   }
+https://www.w3schools.com/css/css3_animations.asp
+https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation1
+
+
+10)animation-delay: calc(var(--order)*200ms); 
+--order:1
+--order:2
+https://www.youtube.com/watch?v=Qhaz36TZG5Y 6:46 gd
+
+11)保留h1文字有助搜索引擎理解網頁內容
+>用css background-image:url(312.png)
+>background-repeat:no-repeat;background-position:center:
+>字要留 text-indent:-123123px 推走
+
+
+alt+左click可以同時選多行寫code
+
+12)
+無單位，不可為負
+flex-grow 「伸展」預設值為 0
+flex-shrink 「壓縮」預設值為 
+flex-shrink 不想要被壓縮,可以設定數值為 0。
+flex-basis 子元素基本大小：預設值為 0
+
+13)可以單件用justify-self / align-self調整
+
+14)scroll-behavior: smooth;
+https://developer.mozilla.org/zh-CN/docs/Web/CSS/scroll-behavior
+
+15) <pre></pre> 文字通常按照原始文件中的編排，以等寬字體的形式展現出來
+https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/pre
+
+16)js this
+
+17)float:left?
+
+18) 用aspect-ratio控制size大小
+>>width:100px//aspect-ratio:2/1
+>> 200px/100px
+
+19) attr() 可以拎人地參數數值尼用 類似props
+
+20).container:focus
+focus係指目前指既野 focus-within係佢既父元素
+
+21)grid https://www.youtube.com/watch?v=lI81W0A-GUc
+
+22).container :last-child(first都得)(指定最後一個元素) // :fist-of-type(last)(每種type既第1個)
+:only-child (div入面得1個子元素先會生效) // :nth-child(1) (odd/even都得) (首個子元素)	
+:nth-child(3n+1) 類似loop 3(0)+1 >3(1)+1> 3(2)+1 
+
+23) GET SET  係object入面既功能, 類似react既usestate set咁
+NEW就使用obj作為模板去定義新既obj>>
+function Person(name) {
+  this.name = name;
+}
+const john = new Person('John');
+
+24) super係用係extends模板個陣用
+>>super(name) 繼承父元素數值
+
+25)promise 

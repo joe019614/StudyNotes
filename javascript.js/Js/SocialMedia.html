@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{background-color:whitesmoke;}
+        h1{text-align: center;}
+        div{
+            font-size: 48px;
+            margin: 15px auto;
+        }
+        p{
+            font-size: 28px; /* cm字大小 */
+            margin: 10px auto; /* 留言間距 */
+            padding: 10px ;  /* 字同外框間距 */
+            background-color: rgb(240,245,253);
+        }
+        .wrapper{
+            width:500px;
+            border:olivedrab 2px solid;
+            background-color: #FFF;
+            /* padding: 0px; */
+        }
+        .nameDiv{
+            text-align: left;
+            padding-left:10px;
+            font-weight:bold;
+            /* position: ;  */ /* ?? */
+        }
+        .name{
+            position:relative;
+            bottom:25px;
+            left: 10px;
+        }
+        .time{
+            position: relative;
+            font-size:12px;
+            left: -20px;
+            bottom:5px;
+        }
+        .profile-img{
+            border-radius: 50%;
+            width: 50px;
+        }
+        .description{
+            background-color:#f0f2f5;
+            margin:0 ;
+            padding: 20px 10px;
+            text-align: left;
+        }
+        #commentCountDiv{
+            text-align: right;
+            padding-right: 23px;
+           /*  font-size: 18px; */
+        }
+        input,button{font-size: 20px;}
+        .submit-comment{text-align: center;}
+        .post{
+            text-align: center;
+            padding:0px;
+        }
+        .mine{background-color: rgb(253,253,240);}
+    </style>
+</head>
+
+<body>
+    <h1> H1 ABC123</h1>
+
+    <div class="wrapper">
+
+        <div class="post">
+
+            <div class="nameDiv">
+                <img class="profile-img" src="img01.jpg" />
+                <span class="name">joe</span> <span class="time">1 小時前</span>
+            </div>
+
+            <img src="img02.jpg" width="500px" alt="img02"/>
+
+            <div class="description">abc123<br/>efg456
+            </div>
+            
+
+        <div id="commentCountDiv"><span id="commentCount">3</span>comments
+        </div>
+
+        </div>
+
+        <div class="comment">
+            <p>joe : cm1</p>
+            <p>joe : cm2</p>
+            <p>joe : cm3</p>
+        </div>
+
+        <div class="submit-comment">
+            <input type="text" name="type comment" id="comment">
+            <button>comment</button>
+        </div>
+    </div>
+
+    <script src="comment.js"></script>
+</body>
+</html>

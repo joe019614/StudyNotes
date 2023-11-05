@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOMTEST</title>
+    <style>
+        .redtext{
+            color:red;
+            font-weight: 900;
+        }
+        .blackborder{
+            border: black dotted 4px;
+            padding: 15px;
+        }
+        div{
+            border:blueviolet 6px outset; 
+        }
+        p{border:red 4px double;}
+    </style>
+</head>
+
+<body>
+    <h1 style="color: yellowgreen;">h1_a</h1> <!-- css -->
+    <div>
+        <p> p0 </p>
+        <p class="p1 redtext"> p1 </p>
+        <p id="p2i"><i> p2i </i></p>
+    
+        <img src="imgtestDOM.jpg" width="400" alt="imgtest">
+        <button id="button1">放大</button>
+        <button id="button2">縮小</button>
+    </div>
+
+
+
+    <script src="HTMLDOM.JS"></script>
+    <script src="CSSDOM.JS"></script> <!-- 連file位 -->
+    <script src="ClickEventDOM.JS"></script>
+    <script src="interactiveHTMLDOM.JS"></script>
+</body>
+</html> 

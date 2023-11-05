@@ -1,0 +1,4 @@
+npx create-react-app
+npm install
+npm start
+rfc > all

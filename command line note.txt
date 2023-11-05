@@ -1,0 +1,65 @@
+clear 	  清空
+pwd  	  show目前位置
+open .    開目前file(mac)      explorer .  (window) 選   explorer [file名] (開指定file) 
+open /    開根目錄     	     explorer /  
+ls    	  list內容     	ls -a (show埋隱藏file) ls -l (show埋詳細資料) ls -t(根據修改時間排)  -la/-alt 
+man ls    查指令用法 [q]離開 (mac)
+cd [file] 進入指定位置		cd /Users/Joe/File1/ABC
+cd .. 	  回到上一層位置  ../.. 上兩層  . 同一層
+mkdir [名] 開file
+git init  創建Git倉儲 [版本控制資料save係入面] (file隱藏 「Shift」+「Command」+「.」show)
+code .    用vscode開目前位置
+
+WorkingDirectory > StagingArea > Repository
+
+git add [file名] 加入staging area
+git commit -m "改動簡介"     (-s 有verify)
+[master (root-commit) bb33378] fitstgitcommit-m < 記錄
+git log     查改動記錄   git log --oneline (short ver)
+git status  查改動狀態  (WorkingDirectory/StagingArea)
+
+
+開個檔案[.gitignore] 係入面打file名就唔會問放唔放入staging area
+*.log (全部.log尾都ignore)
+/filename file入面所有ignore
+
+git checkout (檢驗記錄)  git switch - (返回) 
+
+git checkout -b <branch>  開新分支同時轉埋
+
+git branch <branchname>  開分支
+git branch -D <branchname>  delete分支  	(--delete)(window)
+git branch -a 		check分支
+git switch <branchname> 轉分支
+
+git merge <branchname> 合併 (要係主分支到禁)
+
+git revert 還原 ?? 
+Q)多唔多用
+git reset  選取個格之前既記錄點全部deletet (但係file內容不變)  git reset --hard (file內容改動)
+
+
+
+
+GIT HUB
+github repo名要同upload file名一樣
+
+git push https網 分支名  推資料上github
+git remote add [名] https網 (名通常origin)  > git push origin  快捷
+git clone https網   copy github野落尼  (自動se t名做origin) > cd file > git remote -v (check)
+
+git commit -s -m "abc"  <<< -s signed commit verify
+
+
+Q) .DS_Store係咩尼
+
+
+
+
+
+
+
+mac show隱藏file shift cmd .
+
+html !>tab 大綱
+

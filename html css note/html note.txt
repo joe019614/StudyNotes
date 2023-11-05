@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>        </html>       
+
+<head>
+    <meta charset="UTF-8"> 中文唔會亂碼
+    <title> 左上網頁名
+    <meta name="description" content="網站搜尋簡介">
+    <meta name="author" content="作者">
+    <meta name="keywords" content="keywordsA">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" 跟瀏覽器裝置比例
+</head>
+
+
+<body> 
+<h1> 標題    <h1 id="a"> (改名for css design)
+<p> 文本
+</br>換行 單個
+<hr/> 一間 單個
+
+
+<b></b> <strong></strong> 一樣 b=bold粗體
+<b>視覺上 <strong>語意上 通知重要
+
+<i></i> <em></em> 一樣 斜體 em=emphasized(強調/注重)
+<i>視覺上 <em>語意上 通知重要
+
+<ol type="A">有順序列表
+<li>test</li>
+</ol>
+
+<ul>無順序列表
+<li>test</li>
+</ul>
+
+<figure> 專for圖片   file內file>src="file/名.jpg
+<img src="/名.jpg" alt="文字" width="寬" height="高" align=left right center justify"> align左右中對齊
+</br>
+<figcaption>文字位</figcaption>
+</figure>
+
+
+<table style="width:50%" border="1">   border框 tr行 td格
+    <tr> 					
+        <td colspan="2">姓名</td>	colspan打橫佔幾格
+    </tr>
+    <tr>
+        <td rowspan="2">Choi/蔡</td>   rowspan打橫佔幾格
+        <td>Chi Lam </td>
+    </tr>
+    <tr>
+        <td>志霖</td>
+    </tr>
+</table>
+
+
+
+<iframe width="560" height="315"   放youtube片
+src="https://www.youtube-nocookie.com/embed/aK85S6Uxjlo" title="YouTube video player" 
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+</iframe>
+
+
+<video src="name.mp4" poster="預覽圖.jpg" width="1080" height="768" autoplay="true" controls="true"  >   
+放download影片
+https://ithelp.ithome.com.tw/articles/10290880
+
+<a href="http://www.w3school.com.cn">W3School</a> 超連結 圖/網
+
+<a href="../index.html">W3School</a>      >(../) 跳出file
+
+<div>testa</div> 
+<div>testb</div>
+<span>testc</span> 
+<span>testd</span>
+2個div換行 2個span唔換行
+
+<input type="text" placeholder="文字">
+type=password, date, range, file, checkbox, textarea  > https://www.fooish.com/html/input-tag.html
+
+
+打div.div123 >自動出<div class="div123"></div>
